@@ -60,9 +60,14 @@ header {
     z-index: 1000;
 }
 
-/* Estilo base del menú de navegación */
 .menu {
     display: flex;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
 }
 
 .barra-navegacion {
@@ -297,7 +302,6 @@ header img {
     object-position: bottom;
 }
 
-
 .technologies-article img{
     margin: 5px 10px;
     width: 10%;
@@ -403,4 +407,93 @@ footer {
 .fecha-footer {
     display: flex;
     align-items: center;
+}
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .barra-navegacion {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .barra-navegacion.active {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        text-align: left;
+    }
+
+    .Introduccion {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .Introduccion img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .project {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .technologies-article {
+        display: flex;
+    }
+
+    .technologies-article img{
+    width: 10%;
+    }
+
+    .text-article, .text-experiencia, .text-sobre-mi {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .Introduccion img {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .buttons-info {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .project img {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .project {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .tecnologias-imagenes img {
+        width: 30px;
+        height: auto;
+    }
+
+    .Contacto a {
+        display: block;
+        margin-top: 1rem;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .marca-footer h1 {
+        font-size: 1.5rem;
+    }
 }
