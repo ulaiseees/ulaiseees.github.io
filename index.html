@@ -1,171 +1,162 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ulises Borda Dev</title>
-    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
     <link rel="icon" type="image/svg+xml" href="https://i.pinimg.com/originals/e4/0f/8e/e40f8e0ff636369ccfda3b9dcfd97ca7.jpg" />
-    <link
-    rel="stylesheet"
-    href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    />
-    <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
-    />
-    <link 
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-    />
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
 </head>
 <body>
     <header>
-        <div class="menu-icon" onclick="toggleMenu()">
-            <i class="bi bi-list"></i>
-        </div>
+        <div class="container">
+            <div class="nav-logo-container">
+                <a href="#inicio">
+                    <img class="nav-logo" src="https://i.pinimg.com/originals/e4/0f/8e/e40f8e0ff636369ccfda3b9dcfd97ca7.jpg" alt="Logo">
+                </a>
+            </div>
             <nav>
-                <div class="menu">  
-                    <ul class="barra-navegacion">
-                        <li><a href="#">Inicio</a></li>
-                        <li><a href="#Portafolio">Portafolio</a></li>
-                        <li><a href="#Experiencia">Experiencia</a></li>
-                        <li><a href="#sobre-mi">Sobre Mí</a></li>
-                    </ul>
-                </div>
+                <button class="menu-toggle" aria-label="Abrir menú">
+                    <i class="bi bi-list"></i>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="#portafolio">Portafolio</a></li>
+                    <li><a href="#experiencia">Experiencia</a></li>
+                    <li><a href="#sobre-mi">Sobre Mí</a></li>
+                </ul>
             </nav>
         </div>
-        <img src="https://i.pinimg.com/originals/4a/29/97/4a2997ff3bc339c9f1527b1a19ec9f40.gif" title="Está de paso, en unos días se va.">
     </header>
+
     <main>
-        <section id="Introduccion" class="Introduccion">
-            <div class="image-info">
-            <img title="" src="./assets/foto-info.jpg" alt="">
-            </div>
-            <div class="text-info">
-            <h2 class="title">Ulises Borda</h2>
-            <p class="paragraph">Soy <span class="paragraph">  </span></p>
-            <p class="paragraph">De 🇦🇷, trabajando para crear y dar vida a mis Ideas.</p>
-            <div class="buttons-info">
-                <button class="buttons-me"><a href="https://github.com/ulaiseees" target="_blank" title="Mi GitHub!"><i class="bi bi-github"></i></a></button>
-                <button class="buttons-me"><a href="https://instagram.com/ulaiseees_" target="_blank" title="Mi Instagram!"><i class="bi bi-instagram"></i></a></button>
+        <section id="inicio" class="hero">
+            <div class="container">
+                <img src="./assets/foto-info.jpg" alt="ulaiseees" class="hero-image">
+                <div class="hero-content">
+                    <h1>Ulaiseees</h1>
+                    <p class="typing-text">Soy <span class="typed-text"></span></p>
+                    <p>De 🇦🇷, trabajando para crear y dar vida a mis Ideas.</p>
+                    <div class="social-links">
+                        <a href="https://github.com/ulaiseees" target="_blank" title="Mi GitHub!"><i class="bi bi-github"></i></a>
+                        <a href="https://instagram.com/ulaiseees_" target="_blank" title="Mi Instagram!"><i class="bi bi-instagram"></i></a>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="Portafolio" class="Portafolio">
-            <h2 class="title">Portfolio</h2>
-            <p class="paragraph">Algunos de los Proyectos en los que trabajé.</p>
-            <p class="paragraph">Si quieres ver más, <a class="hiper-link" target="_blank" href="https://github.com/ulaiseees">visita mi GitHub</a>!</p>
-            <article class="project">
-                <div class="foto-pagina-article">
-                    <a target="_blank" href="https://ulaiseees.github.io/Ecommerce-Javascript-CoderHouse/"><img src="assets/Tienda Piedras Preciosas - JS.png" title="Página Trabajada" alt="Imagen de la página trabajada"></a>
-                </div>
-                <div class="text-article">
-                    <div class="title-article">
-                        <h4>E-Commerce JS</h4>
-                        <div class="link-repo">
-                            <button><a class="hiper-link" href="https://github.com/ulaiseees/javascript-coder-house" target="_blank" title="Repositorio"><ib class="bi bi-link"></ib></a></button>
+        <section id="portafolio">
+            <div class="container">
+                <h2>Portfolio Web</h2>
+                <p>Algunos de las páginas en las que trabajé.</p>
+                <p>Si quieres ver más, <a href="https://github.com/ulaiseees" target="_blank">visita mi GitHub</a>!</p>
+                <div class="projects">
+                    <article class="project">
+                        <img src="assets/Tienda Piedras Preciosas - JS.png" alt="E-Commerce JS">
+                        <div class="project-content">
+                            <h3>E-Commerce JS</h3>
+                            <p>Proyecto realizado durante el cursado en CoderHouse. Manejo de Categorías, Local Storage y Librerías.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/ulaiseees/Ecommerce-Javascript-CoderHouse.git" target="_blank" class="btn">Ver Proyecto</a>
+                                <a href="https://ulaiseees.github.io/Ecommerce-Javascript-CoderHouse/" target="_blank" class="web-link"><i class="bi bi-globe2"></i></a>
+                            </div>
+                            <div class="technologies">
+                                <span>HTML5</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="description-article">
-                        <p class="paragraph">Proyecto realizado durante el cursado en CoderHouse.</p>
-                        <p class="paragraph">Manejo de Categorías, Local Storage y Librerías.</p>
-                        <div class="technologies-article">
-                            <img src="https://cdn1.iconfinder.com/data/icons/programing-development-7/24/html_html5_web_programing_developer-512.png" title="HTML5" alt="HTML5">
-                            <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" title="CSS" alt="CSS">
-                            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" title="JavaScript" alt="JavaScript">
+                    </article>
+                    <article class="project">
+                        <img src="assets/Pedras Boreales - JS.png" alt="E-Commerce ReactJS">
+                        <div class="project-content">
+                            <h3>E-Commerce ReactJS</h3>
+                            <p>E-Commerce hecho entero en ReactJS durante el Cursado en CoderHouse. Manejo de Categorías, Funciones, Librerías y Host en Vercel.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/ulaiseees/Ecommerce-React-CoderHouse.git" target="_blank" class="btn">Ver Proyecto</a>
+                                <a href="https://ecommerce-react-coder-house.vercel.app/" target="_blank" class="web-link"><i class="bi bi-globe2"></i></a>
+                            </div>
+                            <div class="technologies">
+                                <span>HTML5</span>
+                                <span>CSS</span>
+                                <span>ReactJS</span>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </article>
-            <article class="project">
-                <div class="foto-pagina-article">
-                    <a target="_blank" href="https://ecommerce-react-coder-house.vercel.app/"><img src="assets/Pedras Boreales - JS.png" title="Página Trabajada" alt="Imagen de la página trabajada"></a>
-                </div>
-                <div class="text-article">
-                    <div class="title-article">
-                        <h4>E-Commerce ReactJS</h4>
-                        <div class="link-repo">
-                            <button><a target="_blank" class="hiper-link" target="_blank" href="https://github.com/ulaiseees/Ecommerce-React-CoderHouse" title="Repositorio"><i class="bi bi-link"></i></a></button>
+                    </article>
+                    <article class="project">
+                        <img src="/assets/SpotifyClon.png" alt="Clon de Spotify">
+                        <div class="project-content">
+                            <h3>Clon Spotify con Astro</h3>
+                            <p>Clon de Spotify con funciones parciales, creado a partir del video de MiduDev.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/ulaiseees/spotify-clone.git" target="_blank" class="btn">Ver Proyecto</a>
+                                <a href="https://spotify-clone-ulaiseees.vercel.app/" target="_blank" class="web-link"><i class="bi bi-globe2"></i></a>
+                            </div>
+                            <div class="technologies">
+                                <span>Astro</span>
+                                <span>TailwindCSS</span>
+                                <span>ReactJS</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="description-article">
-                        <p class="paragraph">E-Commerce hecho entero en ReactJS durante el Cursado en CoderHouse.</p>
-                        <p class="paragraph">Manejo de Categorías, Funciones, Librerías y Host en Vercel.</p>
-                        <div class="technologies-article">
-                            <img src="https://cdn1.iconfinder.com/data/icons/programing-development-7/24/html_html5_web_programing_developer-512.png" title="HTML5" alt="HTML5">
-                            <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" title="CSS" alt="CSS">
-                            <img src="https://www.shareicon.net/data/256x256/2016/07/08/117367_logo_512x512.png" title="ReactJS" alt="ReactJS">
-                        </div>
-                    </div>
+                    </article>
                 </div>
-            </article>
-        </section>
-
-        <section  id="Experiencia" class="Experiencia">
-            <div class="text-experiencia">
-            <h2 class="title">Experiencia</h2>
-            <p class="paragraph"> Actualmente no cuento con Experiencia Laboral. </p>
-            <p class="paragraph">
-            Con lo que si cuento es con Proyectos Personales creados desde 0 por mí, aparte de cursos & proyectos de internet
-            realizados con el fín de entender mejor como se realizan distintas técnicas para lograr un mejor trabajo en el Desarrollo FrontEnd. <br/>
-            </p>
-            <div class="tecnologias">
-                <p class="paragraph">Tecnologías con las que Trabajo:</p>
-                <div class="tecnologias-imagenes">
-                    <img src="https://img.shields.io/badge/HTML5-%23E34F26.svg?style=flat&logo=html5&logoColor=white">
-                    <img src="https://img.shields.io/badge/CSS3-%231572B6.svg?style=flat&logo=css3&logoColor=white">
-                    <img src="https://img.shields.io/badge/JavaScript-%23323330.svg?style=flat&logo=javascript&logoColor=%23F7DF1E"> 
-                    <img src="https://img.shields.io/badge/ReactJS-%2320232a.svg?style=flat&logo=react&logoColor=%2361DAFB">
-                    <img src="https://img.shields.io/badge/SASS%20&%20SCSS-hotpink.svg?style=flat&logo=SASS&logoColor=white">
-                    <img src="https://img.shields.io/badge/GitHub-%23121011.svg?style=flat&logo=github&logoColor=white">
-                    <img src="https://img.shields.io/badge/Git-%23F05033.svg?style=flat&logo=git&logoColor=white">
-                </div>
-            </div>
             </div>
         </section>
 
-        <section id="sobre-mi" class="sobre-mi">
-            <div class="image-sobre-mi">
-                <img src="https://i.pinimg.com/236x/be/b5/ca/beb5ca7c91b41c19434d48b328b9b55c.jpg" alt="">
-            </div>
-            <div class="text-sobre-mi">
-            <h2 class="title">Sobre Mí</h2>
-            <p class="paragraph">
-                Desde pequeño, la creatividad ha sido parte esencial de mi vida, y creo que es el motivo por el cual estoy aquí hoy. <br/>
-                Mi viaje comenzó cuando decidí salir de mi zona de confort y me inscribí en CoderHouse para estudiar Desarrollo FrontEnd. Desde entonces, me he dedicado intensamente a este mundo, invirtiendo horas en aprender y mejorar continuamente. <br/>
-                Mi objetivo es aplicar mis habilidades para crear soluciones que no solo beneficien a programadores, sino también al mundo en general. <br/>
-                Si quieres ver más, visita mi <a class="hiper-link" href="https://www.linkedin.com/in/ulaiseees/">Perfil de Linkedin</a>
-            </p>
+        <section id="experiencia">
+            <div class="container">
+                <h2>Experiencia</h2>
+                <p>Actualmente no cuento con Experiencia Laboral.</p>
+                <p>Con lo que si cuento es con Proyectos Personales creados desde 0 por mí, aparte de cursos & proyectos de internet realizados con el fín de entender mejor como se realizan distintas técnicas para lograr un mejor trabajo en el Desarrollo FrontEnd.</p>
+                <h3>Tecnologías con las que Trabajo:</h3>
+                <div class="technologies">
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                    <span>JavaScript</span>
+                    <span>ReactJS</span>
+                    <span>SASS & SCSS</span>
+                    <span>GitHub</span>
+                    <span>Git</span>
+                </div>
             </div>
         </section>
 
-        <section id="Contacto" class="Contacto">
-            <h2 class="title">Contacto!</h2>
-            <p class="paragraph">Mi bandeja de entrada siempre está abierta a propuestas, consultas, o incluso recomendaciones!</p>
-            <p class="paragraph">¡Tu Mensaje siempre será Bienvenido!</p>
-            <p class="paragraph">Escribime a <a target="_blank" href="">ulaisess@gmail.com</a></p>
+        <section id="sobre-mi">
+            <div class="container">
+                <img src="https://i.pinimg.com/236x/be/b5/ca/beb5ca7c91b41c19434d48b328b9b55c.jpg" alt="Sobre Mí">
+                <div class="about-content">
+                    <h2>Sobre Mí</h2>
+                    <p>Desde pequeño, la creatividad ha sido parte esencial de mi vida, y creo que es el motivo por el cual estoy aquí hoy.</p>
+                    <p>Mi viaje comenzó cuando decidí salir de mi zona de confort y me inscribí en CoderHouse para estudiar Desarrollo FrontEnd. Desde entonces, me he dedicado intensamente a este mundo, invirtiendo horas en aprender y mejorar continuamente.</p>
+                    <p>Mi objetivo es aplicar mis habilidades para crear soluciones que no solo beneficien a programadores, sino también al mundo en general.</p>
+                    <p>Si quieres ver más, visita mi <a href="https://www.linkedin.com/in/ulaiseees/" target="_blank">Perfil de Linkedin</a></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <div class="container">
+                <h2>Contacto!</h2>
+                <p>Mi bandeja de entrada siempre está abierta a propuestas, consultas, o incluso recomendaciones!</p>
+                <p>¡Tu Mensaje siempre será Bienvenido!</p>
+                <p>Escribime a <a target="_blank" href="mailto:ulaisess@gmail.com">ulaisess@gmail.com</a></p>
+            </div>
         </section>
     </main>
+
     <footer>
-        <div class="marca-footer">
-            <h1>ulaiseees.dev</h1>
-        </div>
-        <div class="data-footer">
-            <h4>Inspirado en el <a class="hiper-link" target="_blank" href="https://matiascoletta.com/">Portfolio</a> de Carpi 💻</h4>
-            <h4>Hecho con mucho 🤍</h4>
-        </div>
-        <div class="fecha-footer">
-            <h4>2024</h4>
+        <div class="container">
+            <p>Hecho con mucho 🤍</p>
+            <p>Ulaiseees - 2025</p>
         </div>
     </footer>
-    
-    <!-- SCRIPTS -->
-    <script src="./JS/index.js"></script>
-    <script src="./JS/toggle-menu.js"></script>
 
+    <!-- <button id="backToTop" aria-label="Volver arriba" title="Volver arriba">
+        <i class="bi bi-arrow-up-circle-fill"></i>
+    </button> -->
 
+    <script src="script.js"></script>
 </body>
 </html>
+
