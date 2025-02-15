@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
             setTimeout(erase, newTextDelay);
         }
     }
-
+  
     function erase() {
         if (charIndex > 0) {
             typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex - 1);
